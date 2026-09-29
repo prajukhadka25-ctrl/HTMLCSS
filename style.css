@@ -1,0 +1,284 @@
+/* TASK 1: SELECTORS */
+
+/* Universal selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Element selector */
+p {
+    color: #333;
+}
+
+/* Class selector */
+.highlight {
+    color: blue;
+}
+
+/* ID selector */
+#special {
+    color: red;
+}
+
+/* Grouping selector */
+h3, h4 {
+    color: purple;
+}
+
+/* Descendant selector */
+.article p {
+    color: green;
+}
+
+/* Child selector */
+.parent > p {
+    color: orange;
+}
+
+/* Adjacent sibling selector */
+.first + p {
+    background-color: yellow;
+}
+
+/* General sibling selector */
+.first ~ p {
+    border-left: 3px solid blue;
+}
+
+/* Attribute selector */
+a[target="_blank"] {
+    color: red;
+}
+
+
+/* GENERAL SECTION */
+section {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 2px solid #333;
+}
+
+
+/* TASK 2: UNITS */
+
+.unit-box {
+    width: 80%;             /* % */
+    height: 30vh;           /* vh */
+    padding: 2em;           /* em */
+    border: 3px solid blue; /* px */
+}
+
+.unit-box h2 {
+    font-size: 4vw;         /* vw */
+}
+
+.unit-box p {
+    font-size: 1rem;        /* rem */
+}
+
+button {
+    padding: 10px;
+}
+
+
+/* TASK 3: COLORS */
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.color {
+    width: 150px;
+    padding: 30px;
+    border: 2px solid black;
+}
+
+.name {
+    background-color: lightblue;
+}
+
+.hex {
+    background-color: #90cdf4;
+}
+
+.rgb {
+    background-color: rgb(144, 238, 144);
+}
+
+.rgba {
+    background-color: rgba(255, 165, 0, 0.5);
+}
+
+.hsl {
+    background-color: hsl(280, 60%, 80%);
+}
+
+.hsla {
+    background-color: hsla(340, 70%, 70%, 0.5);
+}
+
+
+/* TASK 4: TYPOGRAPHY */
+
+article h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+article h3 {
+    font-style: italic;
+}
+
+article p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-variant: normal;
+    line-height: 1.6;
+}
+
+article h2 {
+    font-stretch: expanded;
+}
+
+
+/* TASK 5: TEXT */
+
+.text-title {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px gray;
+}
+
+.center {
+    text-align: center;
+}
+
+.indent {
+    text-indent: 30px;
+    line-height: 2;
+    text-align-last: center;
+}
+
+.spacing {
+    letter-spacing: 2px;
+    word-spacing: 8px;
+}
+
+.decoration {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+    text-decoration: underline wavy red 2px;
+}
+
+.shadow {
+    text-shadow: 3px 3px 5px gray;
+    color: #2563eb;
+}
+
+.break {
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+.nowrap {
+    white-space: nowrap;
+    overflow: auto;
+}
+
+
+/* TASK 6: IMAGES */
+
+.images {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.images img {
+    max-width: 100%;
+    min-width: 100px;
+    max-height: 250px;
+    border: 3px solid black;
+    box-shadow: 3px 3px 8px gray;
+}
+
+/* Image 1 - normal */
+.image1 {
+    width: 250px;
+    height: 200px;
+    object-fit: fill;
+    object-position: center;
+}
+
+/* Image 2 - circular */
+.image2 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+/* Image 3 - fixed size */
+.image3 {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* TASK 7: PROFILE CARD */
+
+.profile {
+    width: 350px;
+    max-width: 100%;
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+    background-color: #eaf2ff;
+    border: 3px solid #2563eb;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px gray;
+}
+
+.profile img {
+    width: 140px;
+    height: 140px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2563eb;
+    box-shadow: 2px 2px 8px gray;
+}
+
+.name {
+    color: #1e3a8a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.profile p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.profile a {
+    margin: 5px;
+    color: #2563eb;
+}
+
+.profile button {
+    background-color: #2563eb;
+    color: white;
+    border: 2px solid #1e40af;
+    border-radius: 5px;
+}
